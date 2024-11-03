@@ -135,17 +135,23 @@
     padding-left: 5px;
 }
 .interest{
-    max-width: 100%;
+    width: 100%;
     clear: both;
     height: 30%;
-    padding: 20px 25vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .interest>.title{
     color: #00d7bb;
     font-size: 30px;
+    width: 50vw;
 }
 .interest--content{
     display: flex;
+    width: 50vw;
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
@@ -461,6 +467,11 @@
     height: 20vh;
     line-height: 20vh;
 }
+.myworktitle>h5{
+    background: -webkit-linear-gradient( left, #00f298, #07f7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .myworkcontent{
     background-image: linear-gradient(rgba(0, 255, 197, 0.5), rgba(0, 255, 197, 0.5)),
     url(../style/img/port-bg.jpg);
@@ -608,6 +619,7 @@
     position: absolute;
     font-size: 20px;
     top: -20px;
+    color: aliceblue;
 }
 
 
@@ -626,12 +638,16 @@
     flex-wrap: wrap;
     padding: 100px; 
     
+    
 }
 .contact-title{
     width: 100%;
     font-size: 40PX;
-    color: #05c7ae  ;
+    background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
+    font-weight:700;
 }
 .contact-name{
     width: 50%;
@@ -716,6 +732,8 @@
     align-items: center;
     justify-content: space-between;
     margin: 50px 0px;
+    
+    
 
     
     
@@ -735,8 +753,115 @@
 .footer>h4{
     width: 100%;
     color: #00d7bb;
-    font-size: 19px;
+    font-size: 13px;
     text-align: center;
+    width: 50vw;
+    border-top:1px solid rgb(90, 82, 82) ;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
 }
+.footer-icon>a:hover{
+    background-color: #05c7ae;
+    color: #141d1c;
+    transition: 1s ease;
+}
 
+
+.hire{
+    width: 100%;
+    background-color:#02cfb4 ;
+
+}
+.hire-content{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    padding: 70px 0px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.hire-content>span{
+    font-size: 60px;
+}
+.hire-content>button{
+    border: 1px solid black;
+    background-color: black;
+    padding: 10px 60px;
+    color: #02cfb4;
+
+}
+.hire-content>button:hover{
+    background-color: #00d7bb;
+    color: black;
+    border: 1px solid black;
+
+}
+.hire-content>.hire-content-word{
+    margin: 0px 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.hire-content>.hire-content-word>h3{
+    font-size: 30px;
+}
+
+
+.slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141d1c;
+    flex-direction: column;
+
+}
+.slider>h1{
+    background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 50px 0px;
+    font-size: 50px;
+
+}
+.slider-container{
+    width: 45vw;
+    
+}
+.slider>.slider-container>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.slider>.slider-container>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item>.avatar{
+    height: 130px;
+    width: 130px;
+    background: url(../style/img/about-img.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.slider>.slider-container>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item>.avatar>img{
+    width: 100%;
+    height: auto;
+}
+.slider>.slider-container>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item>.name{
+    background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0px;
+}
+.slider>.slider-container>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item>.content{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 19px;
+}
