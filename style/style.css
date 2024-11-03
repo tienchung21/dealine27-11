@@ -92,7 +92,7 @@
 .about--left>button{
     background: -webkit-linear-gradient(left, #00f298, #07f7f7);
     padding: 10px;
-    box-shadow: 2px 2px 2px 2px #066b46 ;
+    box-shadow: rgba(46, 77, 43, 0.56) 0px 22px 70px 4px;
     border: none;
     margin-top: 15px;
 }
@@ -116,12 +116,12 @@
     padding: 100px;
 }
 .about--right--content>h2{
-    color: #00d7bb;
-    font-size: 40px;
+    width: 30%;
+    font-size: 40px;    
     margin: 20px 0px;
     background: -webkit-linear-gradient(left, #00f298, #07f7f7);
     -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 .about--right--content>h3{
     
@@ -220,7 +220,9 @@
 }
 .education>h3{
     font-size: 40px;
-    color: #07f7f7;
+    background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 60px;
     margin-top: 30px;
 
@@ -337,10 +339,14 @@
     background-color: #22252c;
     padding: 100px 0px;
 }
-.skills>h1{
-    color:#00d7bb ;
+.skills>h3{
+    
     text-align: center;
     padding-bottom: 100px;
+    background: -webkit-linear-gradient(l, #00f298, #07f7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
 }
 .skills-bar{
     background-color: #323741;
@@ -457,13 +463,16 @@
 .mywork{
     width: 100%;
     height: auto;
+    background-color: #323741;
    
 }
 .myworktitle{
     text-align: center;
     font-size: 40px;
-    background-color: #323741;
-    color: #05c7ae;
+    background: -webkit-linear-gradient( left, #00f298, #07f7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
     height: 20vh;
     line-height: 20vh;
 }
@@ -471,6 +480,7 @@
     background: -webkit-linear-gradient( left, #00f298, #07f7f7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 .myworkcontent{
     background-image: linear-gradient(rgba(0, 255, 197, 0.5), rgba(0, 255, 197, 0.5)),
@@ -672,8 +682,11 @@
     color: aliceblue;
     height: 50px;
     border: none;
-    border-bottom: 1px solid green  ;
+    border-bottom: 1px solid rgb(100, 104, 100)  ;
     outline: none;
+}
+.contact-email>input:focus{
+    border-bottom: 1px solid rgb(140, 212, 140)  ;
 }
 .contact-name>input{
     width: 100%;
@@ -681,9 +694,12 @@
     color: aliceblue;
     height: 50px;
     border: none;
-    border-bottom: 1px solid green  ;
+    border-bottom: 1px solid rgb(100, 104, 100)  ;
     outline: none;
     
+}
+.contact-name>input:focus{
+    border-bottom: 1px solid rgb(140, 212, 140)  ;
 }
 .contact-message{   
     width: 100%;
@@ -699,10 +715,13 @@
     background-color: transparent;
     color: aliceblue;
     height: 200px;
-    border-bottom: 1px solid green  ;
+
     outline: none;
     border: none;
-    border-bottom: 1px solid green  ;
+    border-bottom: 1px solid rgb(100, 104, 100)  ;
+}
+.contact-message>input:focus{
+    border-bottom: 1px solid rgb(140, 212, 140)  ;
 }
 .contact-container>button{
     padding: 20px 50px;
@@ -713,6 +732,7 @@
 .contact-container>button:hover{
     background-color: #05c7ae;
     color: #141d1c;
+    box-shadow: rgba(46, 77, 43, 0.56) 0px 22px 70px 4px;
 
 }
 .footer{
@@ -864,4 +884,73 @@
     text-align: center;
     margin-bottom: 30px;
     font-size: 19px;
+}
+
+.menu{
+    width: 100%;
+    height: 9vh;
+    background-color: transparent;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.menu>.menu-container{
+    width: 60vw;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu>.menu-container>.icon{
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+
+}
+.menu>.menu-container>.icon>i{
+    padding: 4px;
+    color: aliceblue;
+}
+.menu>.menu-container>.sub-menu{
+    position: absolute;
+    right: 30px;
+    font-size: 30px;
+}
+.menu>.menu-container>.sub-menu>a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.menu-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+
+}
+.menu-modal>h3{
+    font-size: 50px;
+}
+.menu-modal>span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
 }

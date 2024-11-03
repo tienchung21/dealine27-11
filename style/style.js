@@ -35,3 +35,31 @@ function on6(){
 function off6(){
     document.getElementById("mywork-modal6").style.display="none"
 }
+
+
+function onmenu(){
+    document.getElementById("menu-modal").style.display="flex"
+}
+function offmenu(){
+    document.getElementById("menu-modal").style.display="none"
+}
+
+
+
+
+
+
+window.onscroll= function(){
+    var hientai = window.scrollY
+    if(hientai>10){
+      document.getElementById("header").style.background = "linear-gradient(to right, #00f298, #07f7f7)"
+      document.getElementById("header").style.height="6vh"
+      document.getElementById("header").style.transition="0.6s ease"
+     
+    }
+    else{
+      document.getElementById("header").style.background ="transparent"
+      document.getElementById("header").style.height="9vh"
+      document.getElementById("header").style.transition="0.6s ease"
+    }
+  }
