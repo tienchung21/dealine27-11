@@ -16,7 +16,12 @@
         <div class="imgbg">
 
         </div>
-
+        <div class="scroll" >
+            <div class="scroll-content" id="scroll">
+                <a href="#home"><i class="ti-angle-up"></i></a>
+            </div>
+        </div>
+       
         <div class="menu" id="header">
             <div class="menu-container">
                 <div class="icon">
@@ -36,13 +41,14 @@
         </div>
         <div class="menu-modal" id="menu-modal">
             <span class="ti-close" onclick="offmenu()"></span>
-            <h3>chung</h3>
-            <h3>cu</h3>
-            <h3>to</h3>
-            <h3>v</h3>
-            <h3>l</h3>
+            <h3><a href="#home" onclick="offmenu()">Home</a></h3>
+            <h3><a href="#about"onclick="offmenu()">About</a></h3>
+            <h3><a href="#education"onclick="offmenu()">Education</a></h3>
+            <h3><a href="#mywork"onclick="offmenu()">My Work</a></h3>
+            <h3><a href="#skills"onclick="offmenu()">Skills </a></h3>
+            <h3><a href="#contact"onclick="offmenu()">Contact</a></h3>
         </div>
-        <div class="home">
+        <div class="home" id="home">
             <div class="home--content">
                 <h1>Hello!</h1>
                 <h2>I'm Tiến Chung</h2>
@@ -51,7 +57,7 @@
         </div>
 
 
-        <div class="about">
+        <div class="about" id="about">
             <div class="about--left">
                
                 <div class="about--img">
@@ -126,7 +132,7 @@
                 </div>
             </div>
         </div>
-        <div class="education">
+        <div class="education" id="education">
             <h3>Education</h3>
             <div class="education-icon">
                 <i class="ti-ruler-pencil"></i>
@@ -211,7 +217,7 @@
             
         </div>
         <div class="education" style="background-color: #22252c;">
-            <h3>Work Experience</h3>
+            <h3 class="fade-downh">Work Experience</h3>
             <div class="education-icon">
                 <i class="ti-ruler-pencil"></i>
             </div>
@@ -294,7 +300,7 @@
             <div class="education-end"></div>
             
         </div>
-        <div class="skills">
+        <div class="skills" id="skills">
             <h3>Professional Skills</h3>
             <div class="skills-bar">
                 <div class="skills-bar-content">
@@ -386,7 +392,7 @@
             </div>
 
         </div>
-        <div class="mywork">
+        <div class="mywork" id="mywork">
             <div class="myworktitle">
                 <h5>Some Of My Works</h5>
 
@@ -639,7 +645,7 @@
                 <button>HIRE ME</button>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="contact-container">
                 <div class="contact-title">
                         CONTACT ME

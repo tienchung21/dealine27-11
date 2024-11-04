@@ -54,12 +54,22 @@ window.onscroll= function(){
     if(hientai>10){
       document.getElementById("header").style.background = "linear-gradient(to right, #00f298, #07f7f7)"
       document.getElementById("header").style.height="6vh"
+      document.getElementById("scroll").style.transform="translateY(0px)" 
+      document.getElementById("scroll").style.transition="0.6s ease"
       document.getElementById("header").style.transition="0.6s ease"
      
     }
     else{
       document.getElementById("header").style.background ="transparent"
       document.getElementById("header").style.height="9vh"
+      document.getElementById("scroll").style.transform="translateY(40px)" 
+      document.getElementById("scroll").style.transition="0.6s ease"
       document.getElementById("header").style.transition="0.6s ease"
     }
   }
+
+
+
+
+
+
