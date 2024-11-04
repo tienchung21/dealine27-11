@@ -11,7 +11,7 @@ body {
 }
 html{
     scroll-behavior: smooth;
-    transition: 5s  4s ease;
+    transition: 5s 4s ease;
 }
 
 .main{
@@ -927,7 +927,7 @@ html{
 
 .menu{
     width: 100%;
-    height: 9vh;
+    height: 7vh;
     background-color: transparent;
     z-index: 10;
     position: fixed;
@@ -937,7 +937,8 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+
 
 }
 .menu>.menu-container{
@@ -996,8 +997,8 @@ html{
 }
 .menu-modal>span{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 30px;
+    right: 30px;
     font-size: 50px;
     color: aliceblue;
 }
@@ -1078,3 +1079,25 @@ scrollbar */
     transition: 10s ease;
   }
   /* scrollbar ennd */
+
+
+
+
+
+/* 
+start filter product
+*/
+.button-group{
+    width: 50%;
+    background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* 
+end filter product
+*/
+
+
+
