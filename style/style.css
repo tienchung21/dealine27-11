@@ -1088,11 +1088,20 @@ scrollbar */
 start filter product
 */
 .button-group{
-    width: 50%;
-    background: -webkit-linear-gradient(left, #00f298, #07f7f7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    width: 30%;
+    
+    text-align: center;
+    color: #141d1c;
+    padding: 20px 0px;
 }
+.button-group>.button{
+    color: #141d1c;
+    font-size: 30px;
+    margin: 0px 10px;
+    
+}
+
+
 
 
 /* 
