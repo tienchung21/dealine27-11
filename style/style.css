@@ -1402,14 +1402,12 @@ end filter product
     transition: 1s ease ;
     opacity: 0.8;
 }
-.myworkcontent>.content>.item{
-  
+.myworkcontent>.content>.item {
     width: 100%;
-    height:100% ;
+    height: auto;
     box-sizing: border-box;
     padding: 0px;
     margin-bottom: 6vw;
-
 }
 .myworkcontent>.content>.item>.item-opa{
   
@@ -1424,6 +1422,16 @@ end filter product
     transition: 1s ease ;
     opacity: 0.8;
 }
+
+
+.mywork-modal-content{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    
+    
+}
+
 /* slider */
 .slider-container{
     width: 100vw;
@@ -1630,6 +1638,13 @@ end filter product
         transform: scale(1);
         transition: 1s ease ;
         opacity: 0.8;
+    }
+    .mywork-modal-content{
+        position: absolute;
+        width: 90%;
+        height: auto;
+        
+        
     }
       /* education */
       .education-content-box{
