@@ -73,3 +73,15 @@ window.onscroll= function(){
 
 
 
+  const download = document.getElementById("fileRequest");
+
+  download.addEventListener('click', request);
+  
+  function request() {
+      window.location = 'document.docx';
+  }
+
+
+
+
+

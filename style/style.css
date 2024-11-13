@@ -108,7 +108,7 @@ html{
 
 .about--left>button{
     background: -webkit-linear-gradient(left, #00f298, #07f7f7);
-    padding: 10px;
+    padding: 19px;
     box-shadow: rgba(46, 77, 43, 0.56) 0px 22px 70px 4px;
     border: none;
     margin-top: 15px;
@@ -133,7 +133,7 @@ html{
     padding: 100px;
 }
 .about--right--content>h2{
-    width: 30%;
+    width: 50%;
     font-size: 40px;    
     margin: 20px 0px;
     background: -webkit-linear-gradient(left, #00f298, #07f7f7);
@@ -362,7 +362,7 @@ html{
     background-color: #22252c;
     padding: 100px 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     
 }
@@ -399,27 +399,31 @@ html{
 .skills-bar-content-item>span{
     color: aliceblue;
 }
-.skills-bar-content-item>.bar-cha{
+.skills-bar-content-item>.bar-chas>.bar-cha{
     width: 100%;
-    height: 4px;
+    height: 100%;
     background-color: #141d1c;
-    position: relative;
-    margin-top: 5PX;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
+ 
 
 
 }
-.skills-bar-content-item>.bar-cha>.bar-con{
+.skills-bar-content-item>.bar-chas>.bar-cha>.bar-con{
     background-color: #00d7bb;
     width: 80%;
     position: relative;
     height: 4px;
     z-index: 2;
-
+    transform: width 2s ease-out;
 }
-.skills-bar-content-item>.bar-cha>.end{
+.skills-bar-content-item>.bar-chas>.bar-cha>.end{
     width: 10px;
     height: 10px;
     background-color: #00d7bb;
@@ -427,7 +431,17 @@ html{
     position: relative;
     
 }
-.skills-bar-content-item>.bar-cha>.end>.count{
+.skills-bar-content-item>.bar-chas{
+    width: 100%;
+    min-height: 4px;
+    background-color: #141d1c;
+    position: relative;
+    margin-top: 5PX;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.skills-bar-content-item>.bar-chas>.bar-cha>.end>.count{
     height: 20px;
     width: 30px;
     position: absolute;
@@ -670,11 +684,13 @@ html{
     width: 100%;
     height: auto;
     background-color: #22252c;
+    display: flex;
+    justify-content: center;
 }
 .contact-container{
     width: 50vw;
     height: auto;
-    margin: auto;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -763,7 +779,7 @@ html{
     padding: 20px 50px;
     background-color: transparent;
     color: #05c7ae;
-    border: none;
+    border: 1px solid #05c7ae   ;
 }
 .contact-container>button:hover{
     background-color: #05c7ae;
@@ -828,6 +844,8 @@ html{
 .hire{
     width: 100%;
     background-color:#02cfb4 ;
+    display: flex   ;
+    justify-content: center;
 
 }
 .hire-content{
@@ -838,6 +856,7 @@ html{
     justify-content: center;
     align-items: center;
     margin: auto;
+    background-color:#02cfb4 ;
 
 }
 .hire-content>span{
@@ -1114,3 +1133,504 @@ end filter product
 
 
 
+/* Giảm khoảng cách di chuyển cho hiệu ứng fade-up của AOS */
+[data-aos="fade-ups"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      opacity: 1;
+    }
+  
+    @media screen and (min-width: 768px) {
+      transform: translateY(30px);
+  
+      &.aos-animate {
+        transform: translateY(0);
+      }
+    }
+  }
+
+
+  [data-aos="fade-downs"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      opacity: 1;
+    }
+  
+    @media screen and (min-width: 768px) {
+      transform: translateY(-30px);
+  
+      &.aos-animate {
+        transform: translateY(0);
+      }
+    }
+  }
+  [data-aos="fade-rights"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      opacity: 1;
+    }
+  
+    @media screen and (min-width: 768px) {
+      transform: translateX(30px);
+  
+      &.aos-animate {
+        transform: translateX(0);
+      }
+    }
+  }
+  [data-aos="fade-lefts"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      opacity: 1;
+    }
+  
+    @media screen and (min-width: 768px) {
+      transform: translateX(-30px);
+  
+      &.aos-animate {
+        transform: translateX(0);
+      }
+    }
+  }
+
+
+@keyframes animates {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+[data-aos="fade-leftss"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      opacity: 1;
+      animation: animates 2s forwards;
+      
+    }
+  
+    @media screen and (min-width: 768px) {
+      transform: translateX(0px);
+  
+      &.aos-animate {
+        transform: translateX(0);
+      }
+    }
+  }
+
+
+
+
+
+
+
+/* reponsive */
+
+
+/* mobile */
+@media  only screen and (max-width:46.1875rem) {
+    /* mennu */
+    .menu>.menu-container{
+        width: 100%;
+       
+    }
+    /* about */
+    .border--img{
+        display: none;
+    
+    }
+    .about--img>img{
+        width: 90vw;
+        height: auto;
+    }
+
+    .about--left{
+        width: 100%;
+    }
+    .about--right{
+        width: 100%;
+    }
+    .about--right--content{
+        padding: 10px;
+    }
+    .interest{
+     
+        height: 80%;
+      
+    }
+    .interest>.title{
+      
+        width: 90vw;
+
+    }
+    .interest--content{
+        
+        width: 90vw;
+        flex-wrap: wrap ;
+    
+    }   
+    .interest--content>.item{
+        width: 50%;
+    }
+    .about--right--content>h2{
+        width: 90%;
+       
+    }
+    /* education */
+    .education-content-box{
+        
+        margin: 0px 0px;
+    
+    }
+    .education-content{
+        width: 100%;
+
+    
+    }
+    /* skills */
+    .skills>h3{
+    
+        
+        width: 100% ;
+        font-size: 28px;
+    }
+    .skills-bar-content{
+        width: 100%;
+        
+    }
+    .skills-bar-content-item{
+        width: 100%;
+    }
+       /* skill1 */
+       .skills1{
+        background-color: #141d1c;
+        width: 100%;
+        height: auto;
+       
+    }
+    .skills1-content{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 30px;
+        
+    
+    }
+    .skills1-content>.box{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .skills1-content>.box>h1{
+        width: 100%;
+        font-size: 35px;
+        
+    }
+    .skills1-content>.box>h2{
+        width: 100%;
+    }
+    .skills1-content>.box>p{
+        font-size: 15px;
+    }
+    .skills1-content>.boxmid{
+        height:auto ;
+    
+    }
+    .skills1-content>.box{
+        height: auto;
+       
+        
+        
+    }
+
+/* mywordcotent */
+.myworkcontent>.content{
+    width: 92vw;
+    
+  
+    
+}
+.myworkcontent>.content>.item{
+  
+    width: 100%;
+    height:100% ;
+    box-sizing: border-box;
+    padding: 0px;
+    padding-bottom: 6vw;
+
+}
+.myworkcontent>.content>.item>.item-opa{
+  
+    margin: 0px;
+    box-sizing: border-box;
+
+    
+}
+/* slider */
+.slider-container{
+    width: 100vw;
+    
+}
+.slider>h1{
+    text-align: center;
+    font-size: 29px;
+
+}
+.slider>.slider-container>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item>.content{
+    padding: 0px 10px;
+}
+
+    /* hire */
+    .hire{
+    
+        display: flex   ;
+      
+    
+    }
+    .hire-content{
+        width: 86vw;
+        margin: 0px;
+        flex-direction: column ;
+        
+      
+    }
+    .hire-content>.hire-content-word>h3{
+        font-size: 25px;
+      
+    }
+    .hire-content>button{
+        margin-top: 20px;
+    
+    }
+    .hire-content>.hire-content-word>p{
+        margin: 5px 0px;
+        font-size: 15px;
+        color: #22252c;
+    }
+
+/* contact */
+.contact-container{
+    width: 100%;
+    padding: 0px;
+    margin: 20px 0px;
+    
+    
+}
+.contact-title{
+    width: 100%;
+    font-size: 29px ;
+   
+}
+
+.contact-name{
+    width: 100%;
+    padding: 20px 12px;  
+  
+
+}
+.contact-name>input{
+    width: 100%;
+}
+.contact-email{
+
+    padding: 20px 12px;     
+    width: 100%;
+        
+    
+}
+/* footer */
+.footer-icon{
+    width: 70vw;
+  
+    margin: 20px 0px 50px 0px;
+    
+
+    
+    
+}
+
+.footer>h4{
+    width: 91%;
+    
+
+}
+
+
+  
+    
+}
+
+
+/* tablet */
+@media only screen and (min-width:46.1875rem)and (max-width:63.975rem){
+    /* about */
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about--left{
+        width: 60%;
+        margin-left: 30px;
+       
+        
+
+    }
+    .about--right{
+        width: 100%;
+       
+    }
+    .interest{
+     
+        height: 70%;
+      
+    }
+    .interest>.title{
+      
+        width: 90vw;
+
+    }
+    .interest--content{
+        
+        width: 90vw;
+        flex-wrap: wrap ;
+    
+    }
+    .interest--content>.item{
+        width: 30%;
+    }
+    /* education */
+
+    /* skill */
+    .skills-bar-content{
+       
+        width:100%;
+        margin: 0;
+       
+        
+    }
+    /* skill1 */
+    .skills1{
+        background-color: #141d1c;
+        width: 100%;
+        height: auto;
+       
+    }
+    .skills1-content{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 30px;
+        
+    
+    }
+    .skills1-content>.box{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .skills1-content>.box>h1{
+        width: 100%;
+        font-size: 35px;
+        
+    }
+    .skills1-content>.box>h2{
+        width: 100%;
+    }
+    .skills1-content>.box>p{
+        font-size: 15px;
+    }
+    /* mywordcotent */
+    .myworkcontent>.content{
+        width: 96vw;
+        
+      
+        
+    }
+    .myworkcontent>.content>.item{
+      
+        width: 48vw;
+        height:48vw ;
+        
+    
+    }
+    .myworkcontent>.content>.item>.item-opa{
+      
+        margin: 0px;
+   
+        
+    }
+/* hire */
+.hire{
+    
+    display: flex   ;
+  
+
+}
+.hire-content{
+    width: 86vw;
+    margin: 0px;
+    flex-direction: column ;
+    
+  
+}
+.hire-content>.hire-content-word>h3{
+    font-size: 25px;
+  
+}
+.hire-content>button{
+    margin-top: 20px;
+
+}
+.hire-content>.hire-content-word>p{
+    margin: 5px 0px;
+    font-size: 15px;
+    color: #22252c;
+}
+/* contact */
+.contact-container{
+    width: 100%;
+    padding: 0px;
+    margin: 20px 0px;
+    
+    
+}
+
+.contact-name{
+
+    padding: 20px 12px;  
+  
+
+}
+.contact-name>input{
+    width: 100%;
+}
+.contact-email{
+
+    padding: 20px 12px;     
+
+        
+    
+}
+    /* footer */
+    .footer-icon{
+        width: 50vw;
+      
+        margin: 20px 0px 50px 0px;
+        
+    
+        
+        
+    }
+}
