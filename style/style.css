@@ -555,8 +555,8 @@ html{
 }
 .myworkcontent>.content>.item{
     box-sizing: border-box;
-    width: calc(100%/3);
-    padding-top: calc(100% / 3);
+    width: 20vw;
+    height: 20vw;
     padding: 18px;
     position: relative;
 
@@ -594,7 +594,7 @@ html{
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 18px;
+    box-sizing: border-box;
     border: 10px solid rgb(194, 177, 177);
     opacity: 0;
     
