@@ -1418,6 +1418,12 @@ end filter product
 
     
 }
+.myworkcontent>.content>.item:focus>.item-opa{
+    background-color: rgb(255, 255, 255);
+    transform: scale(1);
+    transition: 1s ease ;
+    opacity: 0.8;
+}
 /* slider */
 .slider-container{
     width: 100vw;
@@ -1435,7 +1441,7 @@ end filter product
     /* hire */
     .hire{
     
-        display: flex   ;
+        display: flex;
       
     
     }
@@ -1614,6 +1620,12 @@ end filter product
         
     }
     .myworkcontent>.content>.item:active>.item-opa{
+        background-color: rgb(255, 255, 255);
+        transform: scale(1);
+        transition: 1s ease ;
+        opacity: 0.8;
+    }
+    .myworkcontent>.content>.item:focus>.item-opa{
         background-color: rgb(255, 255, 255);
         transform: scale(1);
         transition: 1s ease ;
