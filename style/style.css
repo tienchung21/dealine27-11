@@ -1291,9 +1291,45 @@ end filter product
     
     }
     .education-content{
-        width: 100%;
+        width: 96%;
 
     
+    }
+    .education-content-box .mid >div{
+        width: 22px;
+        height: 22px;
+        
+        
+    }
+    .education-content .mid >div>h5{
+        height: 6px;
+        width: 6px;
+       
+     
+    }
+    .education-content .right>h4{
+        
+        font-size: 22px;
+        font-weight: 500;
+       
+    }
+    .education-content .left>h4{
+       
+        font-size: 22px;
+        font-weight: 500;
+        
+    }
+    .education-content .right>p{
+        
+        font-size: 12px;
+     
+       
+    }
+    .education-content .left>p{
+       
+        font-size: 12px;
+     
+        
     }
     /* skills */
     .skills>h3{
@@ -1571,6 +1607,18 @@ end filter product
    
         
     }
+      /* education */
+      .education-content-box{
+        
+        margin: 0px 0px;
+    
+    }
+    .education-content{
+        width: 100%;
+
+    
+    }
+    
 /* hire */
 .hire{
     
