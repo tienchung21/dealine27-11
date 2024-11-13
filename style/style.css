@@ -1396,13 +1396,19 @@ end filter product
   
     
 }
+.myworkcontent>.content>.item:active>.item-opa{
+    background-color: rgb(255, 255, 255);
+    transform: scale(1);
+    transition: 1s ease ;
+    opacity: 0.8;
+}
 .myworkcontent>.content>.item{
   
     width: 100%;
     height:100% ;
     box-sizing: border-box;
     padding: 0px;
-    padding-bottom: 6vw;
+    margin-bottom: 6vw;
 
 }
 .myworkcontent>.content>.item>.item-opa{
@@ -1607,6 +1613,12 @@ end filter product
    
         
     }
+    .myworkcontent>.content>.item:active>.item-opa{
+        background-color: rgb(255, 255, 255);
+        transform: scale(1);
+        transition: 1s ease ;
+        opacity: 0.8;
+    }
       /* education */
       .education-content-box{
         
@@ -1618,6 +1630,7 @@ end filter product
 
     
     }
+    
     
 /* hire */
 .hire{
